@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.iiiedu.eeit88.health.member.model.MemberDAO;
+import org.iiiedu.eeit88.health.member.dao.MemberDAO;
 import org.iiiedu.eeit88.health.sport.model.SportBean;
 import org.iiiedu.eeit88.health.sport.model.SportDAO;
 import org.iiiedu.eeit88.health.sport.model.SportRecommandBean;

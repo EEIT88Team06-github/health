@@ -10,7 +10,8 @@ import org.iiiedu.eeit88.health.food.model.CookbookBean;
 import org.iiiedu.eeit88.health.food.model.CookbookDAO;
 import org.iiiedu.eeit88.health.food.model.dao.CookRecommandDAOJdbc;
 import org.iiiedu.eeit88.health.food.model.dao.CookbookDAOJdbc;
-import org.iiiedu.eeit88.health.member.model.MemberDAO;
+import org.iiiedu.eeit88.health.member.dao.MemberDAO;
+
 
 
 

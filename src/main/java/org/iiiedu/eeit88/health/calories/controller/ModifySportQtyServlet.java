@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.iiiedu.eeit88.health.bean.MemberBean;
 import org.iiiedu.eeit88.health.calories.service.ConsumeCart;
-import org.iiiedu.eeit88.health.member.model.MemberBean;
 
 @WebServlet("/calculaties/sport/modifyQuantity.do")
 public class ModifySportQtyServlet extends HttpServlet{
@@ -22,16 +22,16 @@ public class ModifySportQtyServlet extends HttpServlet{
 		
 		HttpSession session = request.getSession(false);  // 取出session物件
 		
-//		if(session == null){  //連線逾時
-//		response.sendRedirect(request.getContextPath()+"/login.jsp" );
-//		return;	
-//	}
+		if(session == null){  //連線逾時
+		response.sendRedirect(request.getContextPath()+"/login.jsp" );
+		return;	
+	}
 		
 		MemberBean mb = (MemberBean) session.getAttribute("LoginOK");
-//		if(mb==null){  //確認是否登入，沒有要導向login(登入後要導回??)
-//			response.sendRedirect(response.encodeRedirectURL(request.getContextPath()+"/login.jsp"));
-//			return;
-//		}
+		if(mb==null){  //確認是否登入，沒有要導向login(登入後要導回??)
+			response.sendRedirect(response.encodeRedirectURL(request.getContextPath()+"/login.jsp"));
+			return;
+		}
 		
 		ConsumeCart cc = (ConsumeCart) session.getAttribute("ConsumeCart");
 		if(cc == null){  //如果在攝取紀錄裡找不到要加的，導向

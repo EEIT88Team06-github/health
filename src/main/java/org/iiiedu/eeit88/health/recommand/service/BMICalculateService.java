@@ -2,15 +2,11 @@ package org.iiiedu.eeit88.health.recommand.service;
 
 
 
-import org.iiiedu.eeit88.health.member.model.MemberDAO;
-
 
 
 public class BMICalculateService {
 
-	private MemberDAO member = new MemberDAO();
-	
-	
+
 //	public String functionBMI(int id){  //回傳過輕/適中/過胖
 	public String functionBMI(float height,float weight,String gender){  //回傳過輕/適中/過胖
 		String result = null;

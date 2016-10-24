@@ -10,8 +10,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.iiiedu.eeit88.health.bean.MemberBean;
 import org.iiiedu.eeit88.health.food.model.AbsorbShowBean;
-import org.iiiedu.eeit88.health.member.model.MemberBean;
+
 import org.iiiedu.eeit88.health.memberrecord.service.ShowAbsorbHistoryService;
 import org.iiiedu.eeit88.health.memberrecord.service.ShowConsumeHistoryService;
 import org.iiiedu.eeit88.health.sport.model.ConsumeShowBean;
@@ -29,12 +30,12 @@ public class HealthRecordServlet extends HttpServlet{
 		HttpSession session = request.getSession(false); // 取出session物件	
 		//確認是否登入
 		MemberBean mb = (MemberBean) session.getAttribute("LoginOK");  //loginToken
-//		if (mb == null) {  
-//			response.sendRedirect(response.encodeRedirectURL(request.getContextPath()+"/login.jsp" ));
-//			return;
-//		}
-//		Integer memId = mb.getId();
-		Integer memId = 1;
+		if (mb == null) {  
+			response.sendRedirect(response.encodeRedirectURL(request.getContextPath()+"/login.jsp" ));
+			return;
+		}
+		Integer memId = mb.getId();
+//		Integer memId = 1;
 
 		//1.接收資料
 			String startDay = request.getParameter("startDay");

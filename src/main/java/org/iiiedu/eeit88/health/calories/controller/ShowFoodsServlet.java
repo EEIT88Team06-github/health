@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.iiiedu.eeit88.health.bean.MemberBean;
 import org.iiiedu.eeit88.health.calories.service.ShowFoodsService;
 import org.iiiedu.eeit88.health.food.model.FoodBean;
 
@@ -25,18 +26,18 @@ public class ShowFoodsServlet extends HttpServlet{
 		
 		HttpSession session = request.getSession(false); // 取出session物件
 		
-//		if(session == null){  //連線逾時
-//			response.sendRedirect(request.getContextPath()+"/login.jsp");
-//			return;	
-//		}
+		if(session == null){  //連線逾時
+			response.sendRedirect(request.getContextPath()+"/login.jsp");
+			return;	
+		}
 		
 //		//確認是否登入
-//		MemberBean mb = (MemberBean) session.getAttribute("LoginOK");  //loginToken
-//		
-//		if (mb == null) {  
-//			response.sendRedirect(response.encodeRedirectURL(request.getContextPath()+"/login.jsp"));
-//			return;
-//		}
+		MemberBean mb = (MemberBean) session.getAttribute("LoginOK");  //loginToken
+		
+		if (mb == null) {  
+			response.sendRedirect(response.encodeRedirectURL(request.getContextPath()+"/login.jsp"));
+			return;
+		}
 		
 		
 		

@@ -9,8 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.iiiedu.eeit88.health.bean.MemberBean;
 import org.iiiedu.eeit88.health.food.model.CookbookBean;
-import org.iiiedu.eeit88.health.member.model.MemberBean;
+
 import org.iiiedu.eeit88.health.recommand.service.MemberRecommandFoodService;
 import org.iiiedu.eeit88.health.recommand.service.MemberRecommandSportService;
 import org.iiiedu.eeit88.health.sport.model.SportBean;
@@ -31,13 +32,13 @@ public class MemberBMIServlet extends HttpServlet {
 		HttpSession session = request.getSession(); // 取出session物件
 		MemberBean mb = (MemberBean) session.getAttribute("LoginOK");  //loginToken
 		
-//		if (mb == null) {  
-//			response.sendRedirect(response.encodeRedirectURL("/TestTwo/recommands/guest/calculaties.jsp"));
-//			return;
-//		}
+		if (mb == null) {  
+			response.sendRedirect(response.encodeRedirectURL("/TestTwo/recommands/guest/calculaties.jsp"));
+			return;
+		}
 
-//		Integer id = mb.getId();
-		Integer id = 2;
+		Integer id = mb.getId();
+//		Integer id = 2;
 		
 		String recommand = (String) session.getAttribute("recommand");  //System.out.println(recommand);
 		

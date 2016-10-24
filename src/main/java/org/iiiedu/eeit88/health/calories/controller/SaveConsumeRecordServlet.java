@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-
+import org.iiiedu.eeit88.health.bean.MemberBean;
 import org.iiiedu.eeit88.health.calories.service.ConsumeCart;
 import org.iiiedu.eeit88.health.sport.model.ConsumeBean;
 import org.iiiedu.eeit88.health.sport.model.ConsumeDetailBean;
@@ -31,18 +31,18 @@ public class SaveConsumeRecordServlet extends HttpServlet {
 		
 		HttpSession session = request.getSession(false); // 取出session物件
 		
-//		if(session == null){  //連線逾時
-//			response.sendRedirect(request.getContextPath()+"/login.jsp");
-//			return;	
-//		}
+		if(session == null){  //連線逾時
+			response.sendRedirect(request.getContextPath()+"/login.jsp");
+			return;	
+		}
 		
 //		//確認是否登入
-//		MemberBean mb = (MemberBean) session.getAttribute("LoginOK");  //loginToken
-//		
-//		if (mb == null) {  
-//			response.sendRedirect(response.encodeRedirectURL(request.getContextPath()+"/login.jsp"));
-//			return;
-//		}
+		MemberBean mb = (MemberBean) session.getAttribute("LoginOK");  //loginToken
+		
+		if (mb == null) {  
+			response.sendRedirect(response.encodeRedirectURL(request.getContextPath()+"/login.jsp"));
+			return;
+		}
 		
 		ConsumeCart cc = (ConsumeCart) session.getAttribute("ConsumeCart");
 		if(cc == null){  //如果在消耗紀錄裡找不到要加的，導向
@@ -57,8 +57,8 @@ public class SaveConsumeRecordServlet extends HttpServlet {
 		//3.轉換資料
 		//4.執行邏輯
 		if(recordStatus.equals("保存")){
-//			int memId = mb.getId();
-			int memId = 1;
+			int memId = mb.getId();
+//			int memId = 1;
 			java.util.Date consumeDate = new java.util.Date();
 			List<ConsumeDetailBean> beans = new ArrayList<ConsumeDetailBean>();
 			Map<Integer,ConsumeItemsBean> cart = cc.getContent();
