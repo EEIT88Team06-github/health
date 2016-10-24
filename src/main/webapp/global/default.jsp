@@ -58,7 +58,7 @@
 					        </li>
 					 
 					 
-					        <li><a href="#" style="color:#8EBEAE">購物專區</a></li>
+					        <li><a href="<c:url value='/shopping/Products?intend=selectAll'/>" style="color:#8EBEAE">購物專區</a></li>
 				
 					
 					        <li><a href="#" style="color:#8EBEAE">公告訊息</a></li>
