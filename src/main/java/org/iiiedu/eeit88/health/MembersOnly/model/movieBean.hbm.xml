@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016/10/24 ?W?? 09:04:50 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.iiiedu.eeit88.health.MembersOnly.model.movieBean" table="movie">
+    
+    
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        
+        
+        <property name="type" type="java.lang.String">
+            <column name="TYPE" />
+        </property>
+        
+        
+        <property name="memid" type="java.lang.Integer">
+            <column name="MEMID" />
+        </property>
+        
+        
+        <property name="moviesubject" type="java.lang.String">
+            <column name="MOVIESUBJECT" />
+        </property>
+        
+        
+        <property name="content" type="java.lang.String">
+            <column name="CONTENT" />
+        </property>
+        
+        
+        <property name="upload" type="java.util.Date">
+            <column name="UPLOAD" />
+        </property>
+        
+        <property name="moviestatus" type="boolean">
+            <column name="MOVIESTATUS" />
+        </property>
+        
+        
+    </class>
+</hibernate-mapping>

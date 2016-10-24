@@ -1,1 +1,5 @@
-/pom.xml
+/.settings/
+/target/
+.project
+.classpath
+
