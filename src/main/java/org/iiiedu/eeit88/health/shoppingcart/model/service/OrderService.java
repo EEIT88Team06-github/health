@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import org.iiiedu.eeit88.health.global.MemberBean;
+import org.iiiedu.eeit88.health.bean.MemberBean;
 import org.iiiedu.eeit88.health.shoppingcart.model.ContactsBean;
 import org.iiiedu.eeit88.health.shoppingcart.model.DetailBean;
 import org.iiiedu.eeit88.health.shoppingcart.model.IDetailDAO;
@@ -52,7 +52,7 @@ public class OrderService {
 		if(cBean == null){
 			oBean.setPhone(mBean.getPhone());
 			oBean.setName(mBean.getLastname()+mBean.getFirstname());
-			oBean.setOrderItemAddress(mBean.getCity()+mBean.getCountry()+mBean.getAddr());
+			oBean.setOrderItemAddress(mBean.getCity()+mBean.getCounty()+mBean.getAddr());
 		}else {
 			oBean.setPhone(cBean.getPhone());
 			oBean.setName(cBean.getName());
