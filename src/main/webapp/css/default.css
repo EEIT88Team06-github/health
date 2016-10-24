@@ -1,0 +1,748 @@
+
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10pt;
+	color: #000000;
+}
+
+h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+}
+
+p, ol, ul
+{
+	margin-top: 0px;
+}
+
+p
+{
+	line-height: 200%;
+}
+
+strong
+{
+}
+
+a
+{
+	color: #0000FF;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+a img
+{
+	border: none;
+}
+
+.image
+{
+	display: inline-block;
+}
+
+.image img
+{
+	display: block;
+	width: 100%;
+}
+
+.image-full
+{
+	display: block;
+	width: 100%;
+	margin: 0 0 2em 0;
+}
+
+.image-left
+{
+	float: left;
+	margin: 0 2em 2em 0;
+}
+
+.image-centered
+{
+	display: block;
+	margin: 0 0 2em 0;
+}
+
+.image-centered img
+{
+	margin: 0 auto;
+	width: auto;
+}
+
+img.border
+{
+}
+
+img.alignleft
+{
+	float: left;
+}
+
+img.alignright
+{
+	float: right;
+}
+
+img.aligncenter
+{
+	margin: 0px auto;
+}
+
+hr
+{
+	display: none;
+}
+
+.button-style
+{
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px 20px;
+	background: #99CCBB;
+	border-radius: 5px;
+	box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.1);
+	border: 1px solid #8EBEAE;
+	line-height: normal;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-shadow: 0px 1px 0px rgba(0,0,0,.2);
+	font-size: 1em;
+	font-weight: 400;
+	color: #FFF !important;
+}
+
+.button-style a
+{
+	text-decoration: none;
+	color: #FFF !important;
+}
+
+ul.style3
+{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style: none;
+	color: #6c6c6c
+}
+
+ul.style3 li
+{
+	padding: 0px 0px 5px 0px;
+	margin: 0 0 1em 0;
+}
+
+ul.style3 p
+{
+	margin: 0;
+}
+
+ul.style3 a
+{
+	display: block;
+	text-decoration: none;
+	color: #6c6c6c;
+}
+
+ul.style3 a:hover
+{
+	text-decoration: underline;
+}
+
+ul.style3 h3
+{
+	padding: 8px 0em 5px 0em;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-weight: 700;
+	color: #606060;
+}
+
+ul.style3-alt h3
+{
+	color: #FFFFFF;
+}
+
+ul.style3 .first
+{
+	padding-top: 0px;
+	background: none;
+}
+
+ul.style3 .date
+{
+	float: left;
+	position: relative;
+	width: 60px;
+	height: 54px;
+	margin: 0em 1.5em 0em 0em;
+	padding: 8px 0em 0em 0em;
+	background: #99CCBB;
+	border-radius: 5px;
+	box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.1);
+	border: 1px solid #8EBEAE;
+	line-height: normal;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0px 1px 0px rgba(0,0,0,.2);
+	font-size: 1em;
+	font-weight: 400;
+	color: #FFF;
+}
+
+ul.style3 .date:after
+{
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 6px;
+}
+
+ul.style3 .date b
+{
+	margin: 0;
+	padding: 0;
+	display: block;
+	margin-top: -5px;
+	font-size: 1.8em;
+	font-weight: 700;
+	color: #FFFFFF;
+}
+
+ul.style3 .date a
+{
+	color: #FFFFFF !important;
+}
+
+ul.style3 .date a:hover
+{
+	text-decoration: none;
+}
+
+	ul.style5
+	{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+		ul.style5 li
+		{
+			clear: both;
+			border-top: 1px solid #8EBEAE;
+		}
+
+		ul.style5 span
+		{
+			padding: 1em 0em;
+			line-height: 1.75em;
+		}
+
+		ul.style5 .address
+		{
+			float: left;
+			width: 80px;
+			display: inline-block;
+			font-weight: 600;
+		}
+
+		ul.style5 .address-01
+		{
+			float: left;
+			display: inline-block;
+		}
+
+		ul.style5 .mail
+		{
+			float: left;
+			width: 80px;
+			display: inline-block;
+			font-weight: 600;
+		}
+
+		ul.style5 .mail-01
+		{
+			display: inline-block;
+		}
+
+		ul.style5 .phone
+		{
+			float: left;
+			width: 80px;
+			display: inline-block;
+			font-weight: 600;
+		}
+
+		ul.style5 .phone-01
+		{
+			float: left;
+			display: inline-block;
+		}
+
+		ul.style5 .first
+		{
+			padding-top: 0em !important!;
+			border-top: none;
+		}
+		
+		
+/** WRAPPER */
+
+#wrapper-bg
+{
+	overflow: hidden;
+	background: url(/health/images/bg01.jpg) repeat;
+}
+
+#wrapper
+{
+	margin-top: 30px;
+	padding-bottom: 50px;
+	background: #FFF;
+	box-shadow: 0px 10px 0px rgba(0,0,0,0.03), 0px -10px 0px rgba(0,0,0,0.03);
+}
+
+.container
+{
+	width: 1200px;
+	margin: 0px auto;
+}
+
+.clearfix
+{
+	clear: both;
+}
+
+/** HEADER */
+
+#header
+{
+	overflow: hidden;
+	border-bottom: 1px solid #E7E7E7;
+}
+
+/** LOGO */
+
+#logo
+{
+	float: left;
+	width: 300;
+    position:fixed; /*固定位置定位*/	/*******************************/
+  	top:20px; /*距離上方 0 像素*/
+	left:50%;
+	margin-left:-600px;
+  	z-index:1; /*重疊時會在其他元素之上*/
+}
+
+#logo h1 a
+{
+	display: block;
+	line-height: 100px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 1.3em;
+	color: #3E3E3E;
+}
+
+#logo span
+{
+	color: #8EBEAE;
+}
+
+/** MENU */
+
+#menu
+{
+	float: right;
+	width: 900px;
+	
+}
+
+#menu ul
+{
+	float: right;
+	margin: 0px;
+	padding: 30px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+	
+}
+
+#menu li
+{
+	float: left;
+	border-left: 1px solid #E7E7E7;
+	
+}
+
+#menu a
+{
+	display: block;
+	padding: 12px 12px;
+	margin: 0em 1em;
+	letter-spacing: 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: '微軟正黑體', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color: #99CCBB;
+}
+
+#menu .active a
+{
+	background: #99CCBB;
+	border-radius: 5px;
+	box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.1);
+	border: 1px solid #8EBEAE;
+	color: #FFFFFF;
+}
+
+#menu .active a:hover
+{
+	background-color: #94C5B5;
+}
+
+#menu .active a:active
+{
+	background-color: #8EBEAE;
+}
+
+#menu a:hover
+{
+	text-decoration: none;
+	
+}
+
+/** PAGE */
+
+#page
+{
+}
+
+/** CONTENT */
+
+#content
+{
+}
+
+/** SIDEBAR */
+
+#sidebar
+{
+}
+
+/* Footer */
+
+#footer-content
+{
+	overflow: hidden;
+	padding: 70px 0px 50px 0px;
+	color: #515151;
+}
+
+#footer-content a
+{
+	color: #515151;
+}
+
+#footer-content h2
+{
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	color: #515151;
+}
+
+#footer-content #fbox1
+{
+	float: left;
+	width: 384px;
+	margin-right: 24px;
+}
+
+#footer-content #fbox2
+{
+	float: left;
+	width: 446px;
+	padding: 0px 20px;
+}
+
+#footer-content #fbox3
+{
+	float: right;
+	width: 282px;
+}
+
+#footer
+{
+	overflow: hidden;
+	padding: 30px 0px;
+	box-shadow: 0px -10px 0px rgba(0,0,0,0.03);
+}
+
+#footer p
+{
+	text-align: center;
+	color: #767676;
+}
+
+#footer a
+{
+	color: #5f5f5f;
+}
+
+#banner
+{
+	padding: 30px 0px;
+}
+
+/* Three Column Content */
+
+#three-column
+{
+	overflow: hidden;
+	padding-top: 30px;
+}
+
+#three-column header
+{
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	margin-bottom: 2em;
+	font-size: 1.5em;
+}
+
+#three-column .tbox1 h2, #three-column .tbox2 h2, #three-column .tbox3 h2
+{
+	margin-bottom: 1em;
+	text-transform: uppercase;
+	color: #515151;
+}
+
+#three-column .tbox1
+{
+	float: left;
+	width: 384px;
+	margin-right: 24px;
+}
+
+#three-column .tbox2
+{
+	float: left;
+	width: 384px;
+}
+
+#three-column .tbox3
+{
+	float: right;
+	width: 384px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#menu4 {
+ /* 選單大小 */
+	float: right;
+	width: 1200px;
+    position:fixed; /*固定位置定位*/	/*******************************/
+  	top:20px; /*距離上方 0 像素*/
+	left:50%;
+	margin-left:-600px;
+  	z-index:2; /*重疊時會在其他元素之上*/
+}
+#menu4 ul {
+float: right;
+margin: 0px;
+padding: 30px 0px 0px 0px;
+list-style: none;
+line-height: normal;
+}
+* html #menu4 ul {
+ /* 解決IE6不理overflow問題，直接指定高度 */
+ height:30px;
+}
+#menu4 ul li {
+ /* 利用float讓第一層li水平排列 */
+ float:left;  /*選單排列方式(從左而右)*/
+}
+/* 解決IE6條列式餘白問題*/
+* html #menu4 ul li {
+ display:inline;
+}
+#menu4 ul li a {
+ 	display: block;/* 將a改為區塊元件，以便指定寬高 */
+ 	float:left;/* 這邊也要設float，否則IE6會以100%寬度顯示 */
+	padding: 12px 12px;
+	margin: 0em 1em;
+	letter-spacing: 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: '微軟正黑體', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color: #99CCBB;
+	
+	 /* 固定高度 */
+ 	height:30px;
+ 	width:80px;
+ 	text-align: center;
+ 
+}
+#menu4 ul li ul {
+ position:absolute; /* 讓第二層ul跳脫文件流以利定位 */
+ width:200px; /* 固定寬度 */
+ overflow:visible; /* 避免出現捲軸 */
+ clear:left; /* 讓ul與母階層li相同位置 */
+ /*下拉式選單與母層之間的距離*/
+ margin-top: 40px;  
+ margin-right: 0;
+ margin-bottom: 0;
+ margin-left: 0;
+}
+/* 修正IE7絕對定位差異 */
+*:first-child+html #menu4 ul li ul {
+ margin-top:0;
+}
+/* 修正IE6絕對定位差異 */
+* html #menu4 ul li ul {
+ margin-top:0;
+}
+#menu4 ul li ul li {
+ /* 覆寫繼承自第一層的浮動設定 */
+ float:none;
+ text-align: center;
+ width: 95px;	/*******************************/
+}
+#menu4 ul li ul li a {
+ /* 覆寫繼承自第一層的浮動設定 */
+ float:none;
+ width: 100%;/* 註：display、height、padding繼承第一層的設定 */
+}
+#menu4 ul li ul li ul {
+ margin-top: -30px;
+ margin-right: 0;
+ margin-bottom: 0;
+ margin-left: 200px;
+ width: 100%;
+}
+/* 修正IE7絕對定位差異 */
+*:first-child+html #menu4 ul li ul li ul {
+ margin-top:-30px;
+}
+#menu4 ul li ul li ul li {
+/* width、float繼承第二層，免設定 */
+}
+#menu4 ul li ul li ul li a {
+/* width、float繼承第二層，免設定 */
+}
+/* ---------- 隱藏與顯示階層 ---------- */
+#menu4 ul li ul {
+ /* 預先隱藏第二層 */
+ visibility:hidden;
+}
+#menu4 ul li:hover ul {
+ /* 觸動第一層時，顯示第二層 */
+ visibility:visible;
+}
+
+/* 觸動第一層以上li時改變背景色 */
+#menu4 ul li:hover, #menu4 ul li a:hover {      /***********************/
+ background:#A1F2D7;
+ color:white;
+}
+/* 觸動第二層以上li時改變背景色 */
+#menu4 ul li ul li:hover, #menu4 ul li ul li a:hover {   /***********************/
+ background:#A1F2D7;
+ color:white;
+}
+#menubg{
+	position:fixed; /*固定位置定位*/	/*******************************/
+  	top:30px; /*距離上方 0 像素*/
+  	left:50%;
+	margin-left:-600px;
+  	z-index:1; /*重疊時會在其他元素之上*/
+}
+
+
+/*下面我沒用到~~~
+
+	#menu4 ul li:hover ul li ul {
+ 	/* 顯示第二層時，隱藏第三層，避免同時彈出 
+ 	visibility:hidden;
+	}
+	#menu4 ul li ul li:hover ul {
+ 	/* 觸動第二層時，顯示第三層 
+ 	visibility:visible;
+	}
+	#menu4 ul li ul li:hover ul li ul {
+	 /* 顯示第三層時，隱藏第四層，避免同時彈出 
+	 visibility:hidden;
+	}
+	#menu4 ul li ul li ul li:hover ul {
+	 /* 觸動第三層時，顯示第四層 
+	 visibility:visible;
+	}
+*/
+
+#sign{
+float: right;
+margin: 0px;
+padding: 0px 0px 0px 0px;
+list-style: none;
+line-height: normal;
+
+display: inline;/* 將a改為區塊元件，以便指定寬高 */
+margin: 0em 1em;
+letter-spacing: 2px;
+font-family: '微軟正黑體';
+font-size: 16px;
+font-weight: 600;
+color: gray;
+	
+}
+
+
+
+
