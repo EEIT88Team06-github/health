@@ -21,9 +21,9 @@
 <script src="${pageContext.servletContext.contextPath}/bootstrap/js/jquery-ui.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jq-2.2.3/dt-1.10.12/datatables.min.css"/>
 
-<%-- <c:if test="${empty LoginOK}"> --%>
-<%-- 	<c:redirect url="/login.jsp" /> --%>
-<%-- </c:if>     --%>
+<c:if test="${empty LoginOK}">
+	<c:redirect url="/login.jsp" />
+</c:if>    
 
 <style>
 #page-wrapper{

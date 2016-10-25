@@ -22,10 +22,9 @@
     <link href="${pageContext.servletContext.contextPath}/bootstrap/css/plugins/morris.css" rel="stylesheet"/>
     <!-- Custom Fonts -->
     
-<%-- <c:if test="${empty LoginOK}"> --%>
-<%-- 	<c:redirect url="/login.jsp" /> --%>
-<%-- </c:if>     --%>
-    
+<c:if test="${empty LoginOK}">
+	<c:redirect url="/login.jsp" />
+</c:if>        
     
 <style>
 #page-wrapper{

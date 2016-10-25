@@ -19,9 +19,9 @@
     <script src="${pageContext.servletContext.contextPath}/bootstrap/js/jquery-3.1.0.js"></script>
 	<script src="${pageContext.servletContext.contextPath}/bootstrap/js/jquery-ui.min.js"></script>	
 
-<%-- <c:if test="${empty LoginOK}"> --%>
-<%-- 	<c:redirect url="/login.jsp" /> --%>
-<%-- </c:if>     --%>
+<c:if test="${empty LoginOK}">
+	<c:redirect url="/login.jsp" />
+</c:if>    
 
 <script type="text/javascript">
 <!-- // var tObj = document.getElementById('textarea'); -->
