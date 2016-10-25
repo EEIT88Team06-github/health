@@ -39,7 +39,7 @@ public class HelpAll extends HttpServlet {
 		if (mb == null) {
 			response.sendRedirect(response.encodeRedirectURL("/login.jsp"));
 			return;
-		
+		}
 		
 		HelpService hs = new HelpService();
 		List<HelpBean> hbl = hs.select(null);
@@ -55,7 +55,7 @@ public class HelpAll extends HttpServlet {
 		request.setAttribute("AllHelps", hbl);
      	RequestDispatcher rd = request.getRequestDispatcher("/managehelp/showallhelps.jsp");
 		rd.forward(request, response);
-     	return ; 		
+     	return; 		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

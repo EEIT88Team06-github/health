@@ -66,4 +66,4 @@ public class HelpBean implements Serializable{
 	
 	
 }
->>>>>>> branch 'master' of https://github.com/EEIT88Team06-github/health.git
+

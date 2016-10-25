@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package org.iiiedu.eeit88.health.manager.sport.controller;
 
 import java.io.IOException;
